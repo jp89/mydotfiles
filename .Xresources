@@ -1,0 +1,21 @@
+! Settings for solarized colour scheme
+#include "/home/jpawlak/.colours/solarized"
+
+! transparency
+URxvt.transparent:   true
+URxvt.shading:       17
+
+! font setting
+URxvt.font: xft:inconsolata:bold:size=16
+
+! urxvt as a login shell
+URxvt*loginShell: true 
+
+! enable copy/paste with ctrl c / v
+
+URxvt.perl-ext-common: default,clipboard
+URxvt.iso14755: False
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
