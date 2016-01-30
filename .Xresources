@@ -6,16 +6,16 @@ URxvt.transparent:   true
 URxvt.shading:       17
 
 ! font setting
-URxvt.font: xft:inconsolata:bold:size=16
+URxvt.font: xft:monaco:bold:size=12
 
 ! urxvt as a login shell
-URxvt*loginShell: true 
+URxvt*loginShell: True 
 
-! enable copy/paste with ctrl c / v
-
-URxvt.perl-ext-common: default,clipboard
-URxvt.iso14755: False
+! copy/paste with ctr shift c/v
+URxvt.perl-ext-common: default,clipboard,selection-to-clipboard
+URxvt.iso14755 : False
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.clipboard.copycmd:  xsel -ib
 URxvt.clipboard.pastecmd: xsel -ob
+
